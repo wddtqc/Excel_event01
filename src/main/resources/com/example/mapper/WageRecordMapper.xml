@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.WageRecordMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.entity.WageRecord">
+            <id property="id" column="id" />
+            <result property="projectStreet" column="project_street" />
+            <result property="projectName" column="project_name" />
+            <result property="projectStartTime" column="project_start_time" />
+            <result property="projectEndTime" column="project_end_time" />
+            <result property="name" column="name" />
+            <result property="idCard" column="id_card" />
+            <result property="phone" column="phone" />
+            <result property="company" column="company" />
+            <result property="jobType" column="job_type" />
+            <result property="workArea" column="work_area" />
+            <result property="entryDate" column="entry_date" />
+            <result property="baseSalary" column="base_salary" />
+            <result property="payStatus" column="pay_status" />
+            <result property="socialSecurity" column="social_security" />
+            <result property="remark" column="remark" />
+            <result property="month" column="month" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,project_street,project_name,project_start_time,project_end_time,name,id_card,
+        phone,company,job_type,work_area,entry_date,
+        base_salary,pay_status,social_security,remark,month
+    </sql>
+</mapper>
