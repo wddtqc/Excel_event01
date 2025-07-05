@@ -2,7 +2,7 @@ package com.example.entity;
 
 import javax.validation.constraints.Pattern;
 import java.io.Serializable;
-
+//1111122222
 public class WageRecordDTO implements Serializable {
     private String projectStreet;
     private String projectName;
